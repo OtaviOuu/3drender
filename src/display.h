@@ -14,6 +14,7 @@ extern int WINDOW_SIZE_X;
 extern int WINDOW_SIZE_y;
 
 bool initialize_window(void);
+void draw_pixel(int x, int y, uint32_t color);
 void draw_grid(uint32_t color);
 void draw_retangle(uint32_t color, int x, int y, int width, int height);
 void render_color_buffer(void);

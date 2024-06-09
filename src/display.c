@@ -79,6 +79,10 @@ void draw_retangle(uint32_t color, int x, int y, int width, int height) {
     }
 }
 
+void draw_pixel(int x, int y, uint32_t color) {
+    color_buffer[(WINDOW_SIZE_X * y) + x] = color;
+}
+
 void draw_grid(uint32_t color) {
     // (i, k)
     for (int x = 0; x < (WINDOW_SIZE_X); x++) {

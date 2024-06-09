@@ -40,13 +40,16 @@ void process_input(void) {
 void update() {}
 
 void renderer(void) {
-    SDL_SetRenderDrawColor(render, 255, 0, 0, 255);
+    SDL_SetRenderDrawColor(render, 255, 255, 255, 255);
     SDL_RenderClear(render);
 
     draw_retangle(0xFFFF00FF, 90, 90, 100, 100);
-    draw_grid(0x3eff00);
-    render_color_buffer(); // Render
-    clean_color_buffer(0xffffff); // Clean
+    //draw_grid(0x3eff00);
+    draw_pixel(20, 20, 0xFFFF00FF);
+
+
+    render_color_buffer(); 
+    clean_color_buffer(0xffffff);
 
     SDL_RenderPresent(render); 
 }
@@ -54,7 +57,6 @@ void renderer(void) {
 int main(void) {
     is_running = initialize_window();
 
-    //game loop
     setup();
     while (is_running) {
         process_input();
