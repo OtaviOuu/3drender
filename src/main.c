@@ -168,7 +168,7 @@ int main(void) {
  is_running = initialize_window();
 
  //game loop
- setup();
+  setup();
  while (is_running) {
   process_input();
   update();
