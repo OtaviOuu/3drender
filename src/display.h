@@ -5,11 +5,10 @@
 #include <stdbool.h>
 #include <SDL2/SDL.h>
 
-
-extern SDL_Window* window;
-extern SDL_Renderer* render;
-extern SDL_Texture* color_buffer_texture;
-extern u_int32_t* color_buffer;
+extern SDL_Window *window;
+extern SDL_Renderer *render;
+extern SDL_Texture *color_buffer_texture;
+extern u_int32_t *color_buffer;
 extern int WINDOW_SIZE_X;
 extern int WINDOW_SIZE_y;
 
